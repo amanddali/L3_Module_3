@@ -1,7 +1,5 @@
 package interfaces;
 
-import javax.swing.JOptionPane;
-
 public class BackwardsString extends SpecialString {
 
 	public BackwardsString(String s) {
@@ -10,9 +8,11 @@ public class BackwardsString extends SpecialString {
 
 	@Override
 	public String funkifyText(String s) {
-		String og = JOptionPane.showInputDialog("Type a sentence");
-		
-		return null;
+		String r = "";
+		for (int i = 0; i < s.length(); i++) {
+			r += s.charAt(s.length() - i - 1);
+		}
+		return r;
 	}
-	
+
 }
