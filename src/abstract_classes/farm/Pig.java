@@ -1,19 +1,19 @@
 package abstract_classes.farm;
 
-public class Cow extends Animal {
+public class Pig extends Animal {
 
-	public Cow(String noise, String manure) {
+	public Pig(String noise, String manure) {
 		super(noise, manure);
 	}
 
 	public String makeNoise() {
-		noise = "Moo";
+		noise = "oink";
 		System.out.println(noise);
 		return noise;
 	}
 
 	public String feed() {
-		manure = "Fed grass and pooped";
+		manure = "Fed fruits and pooped";
 		System.out.println(manure);
 		return manure;
 	}
